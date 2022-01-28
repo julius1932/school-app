@@ -30,15 +30,15 @@ module.exports = {
     };
 
     try {
-      const payload = request.query;
+      const payload = {...request.params,...request.query};
       const query = {};
-      query.where = {schoolId:request.params.schoolId};
-      const unwanted=[undefined,"undefined",null,"null"]
       if(payload){
+        query.where = {};
         Object.keys(payload).forEach((key, i) => {
-           if(isEmpty(payload[key])){
+           if(!isEmpty(payload[key])){
                query.where[key] = payload[key];
            }
+           console.log(query)
         });
       }
       let data = await service.get("Klass", query);

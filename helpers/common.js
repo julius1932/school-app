@@ -18,7 +18,7 @@ exports.groupBy = (data, key) => {
 
 exports.isEmpty=(str)=>{
   const unwanted=[undefined,"undefined",null,"null"]
-  if (str && str.trim()&&!unwanted.include(str.trim())) {
+  if (str && str.toString().trim()&&!unwanted.includes(str)) {
      return false;
   }
   true;

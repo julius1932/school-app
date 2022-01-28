@@ -3,7 +3,7 @@ const create = require("./create");
 const delet = require("./delete");
 const update = require("./update");
 
-const baseURL = "teacher";
+const baseURL = "student";
 module.exports = [
     { method: "GET", path: `/${baseURL}/{schoolId}`, config: get },
     { method: ["POST"], path: `/${baseURL}`, config: create },

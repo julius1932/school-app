@@ -10,7 +10,7 @@ const { checkDbConnection }= require( './helpers/appHelper');
 
     const server = await new Hapi.Server({
         host: 'localhost',
-        port: 3000,
+        port: 3010,
     });
 
     const healthCheck = () => Promise.all([
