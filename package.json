@@ -1,0 +1,30 @@
+{
+  "name": "schoolmanager",
+  "version": "1.0.0",
+  "description": "All in one solution for school related software problems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon app.js"
+  },
+  "author": "las Julius and TeamJsof",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^9.1.2",
+    "@hapi/hapi": "^20.1.2",
+    "@hapi/inert": "^6.0.3",
+    "@hapi/vision": "^6.0.1",
+    "async": "^3.2.0",
+    "boom": "^7.3.0",
+    "child_process": "^1.0.2",
+    "config": "^3.3.6",
+    "hapi-swagger": "^14.1.1",
+    "joi": "^17.4.0",
+    "jsonfile": "^6.1.0",
+    "mongodb": "^3.6.5",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0"
+  }
+}
