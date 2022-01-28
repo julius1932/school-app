@@ -13,7 +13,7 @@ const my_secret: string = config.get('my_secret');
  */
 export const sign = (data, expiresIn = '7d', algorithm = 'HS256', loginWith) => {
   let secretKey = secret;
-  if (loginWith && loginWith === 'cdp') {
+  if (loginWith && loginWith === 'shl') {
       secretKey = my_secret
   }
   return jwt.sign(data, secretKey, {algorithm, expiresIn});
